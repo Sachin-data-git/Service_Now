@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array...</title>
+</head>
+<body>
+    
+
+     <script>
+
+        // let name="aman, ajay";
+        // console.log(name);
+
+
+     //  Stored multiple values in single variables with same datatype
+          //index 0       1      2
+    //  let names=["ajay","Aman","Ashish"];
+
+     //accessing values from array via index
+    //  console.log(names[0]);
+    //  console.log(names[1]);
+    //  console.log(names[2]);
+
+    //length of an array
+    // console.log(names.length);  //3
+
+    //How to add  elements into array
+    // let arr1=[];
+    // arr1[0]=parseInt(prompt("Enter Element1:"));
+    // arr1[1]=parseInt(prompt("Enter Element2:"));
+
+    // console.log(arr1);
+    // console.log(arr1.length);// 2
+
+
+    // let arr2=[1,2,3,4,5,6,7,8,9,10];
+    
+//    index=9;
+//    length=10;
+//using for loop we can access the array elements
+    // for(i=0;i<=arr2.length;i++){
+        
+    //     if(arr2[i]%2==0){
+    //         console.log(arr2[i]);
+    //     }
+    // }
+
+    //print the addition of array elements
+    // let arr=[1,2,3,4,5,6,7,8,9,10];
+
+    // let sum=0;
+    //   for(i=0;i<arr.length;i++){
+    //     sum=sum+arr[i];
+    //   }
+    //   console.log(sum);
+
+
+      //Methods Of array 
+        //push() :- Add item to end and return the new length 
+        //pop() :- Remove item from end  and return that element
+        //unshift() :- Add Item to start return the new length
+        //shift() :- Remove Item from start and return that element
+        //indexOf()  :- find the index from starting of an item
+        //lastIndexOf()  :- find the index from ending of an item
+        //slice  :- copy part of the array
+        //splice :- add/remove elements at specific index
+        //includes() :- check if array contains a value
+
+
+        let arr=[1,2,3,4,5,6,7,8,9,10];
+
+        // console.log(arr.length); //10
+        // console.log(arr.push(100));  //11
+        // console.log(arr); 
+        // console.log(arr.pop());
+        // console.log(arr);
+
+        // console.log(arr.length);
+        // console.log(arr.unshift(0));
+        // console.log(arr);
+        // console.log(arr.shift());
+        // console.log(arr);
+
+        // console.log(arr.shift());
+        // console.log(arr);
+
+        // console.log(arr.indexOf(100));  //0
+        // console.log(arr.lastIndexOf(100)); //10
+
+       // console.log(arr.slice(2,4));
+       // console.log(arr);
+
+    //    console.log(arr.splice(0,4));
+    //    console.log(arr);
+
+   //[5,6,7,8,9,10]
+    //    console.log(arr.splice(3,5,"aa"))
+    //    console.log(arr)
+
+    // console.log(arr.includes(10));
+
+
+    // 1)Array Destructuring :- extract the elements from array and unpack that values in variables
+    // 2)Rest Opeartor :- we can store the rest of elements into a single varibles
+    // 3)spread Opeartor :- merge two or more arrays
+    // 4)map Function    : - process the array and store that processed  array into new array
+    // 5)Filter Function  :- filter out the values from array
+    // 6)forEach Loop     :-  iterate each element it dosent generates new array
+
+    // let names=["Ajay","Aman","Ashish","atul","anil","aditya"];
+    //  console.log(names[2]);
+
+    // let[name1,name5,name7,...restData]=names;
+    // console.log(name1);//ajay
+    // console.log(name5); //aman
+    // console.log(restData)
+
+
+    // let arr1=[1,2,3,4,5,];
+    // let arr2=[6,7,8,9,10];
+    // let arr5=[11,12,13,1,4,15];
+    // let arr3=[...arr1,...arr2,...arr5];
+    // console.log(arr3);
+
+
+    //Map
+    let oldArr=[1,2,3,4,5];
+
+    let newArr=oldArr.map((n)=>{
+        return n+2; 
+    })
+    console.log(newArr);  //3,4,5,6,7
+    console.log(oldArr); //1,2,3,4,5
+
+    //filter
+    let newFilterArray=oldArr.filter((m)=>{
+        return m%2==0;
+    });
+    console.log(newFilterArray); //2,4
+
+
+    //forEach 
+    oldArr.forEach((x)=>{
+        console.log(x);
+      })
+
+      
+
+      //for Loop
+      for(i=0;i<3;i++){
+        console.log(arr[i]); //1,2,3
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </script>
+</body>
+</html>
