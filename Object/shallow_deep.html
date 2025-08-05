@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let obj={
+            name:"aman",
+            age:45,
+            Marks:{
+                math:46,
+                sci:78
+            }
+        }
+
+        //shallow Copy
+        // let shallowcopy=Object.assign({},obj);
+        // shallowcopy.name="updated"; //it updates only shallow copy
+        // shallowcopy.Marks.math=100; //it updates shallow as well as original also
+        // console.log(shallowcopy);
+        // console.log(obj)
+
+
+        //deep copy
+
+        let deepcopy=JSON.parse(JSON.stringify(obj));
+        deepcopy.Marks.math=100; ////it updates shallow copy only not original
+        console.log(deepcopy);
+        console.log(obj);
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

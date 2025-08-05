@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Person = [
+            {
+                name: "ajay",
+                age: 10
+            },
+            {
+                name: "Aman",
+                age: 20
+            },
+            {
+                name: "Atul",
+                age: 30
+            },
+            {
+                name: "ashish",
+                age: 60
+            },
+            {
+                name: "sarang",
+                age: 80
+            },
+            {
+                name: "varsha",
+                age: 40
+            },
+            {
+                name: "afnan",
+                age: 34
+            },
+            {
+                name: "sameer",
+                age: 25
+            },
+            {
+                name: "lalit",
+                age: 43
+            },
+            {
+                name: "tejas",
+                age: 56
+            },
+            {
+                name: "pooja",
+                age: 53
+            },
+            {
+                name: "punam",
+                age: 57
+            },
+            {
+                name: "payal",
+                age: 75
+            },
+            {
+                name: "geeta",
+                age: 70
+            },
+            {
+                name: "rutik",
+                age: 40
+            },
+            {
+                name: "kajal",
+                age: 89
+            },
+        ]
+
+
+        let number = prompt("Enter age ")
+
+        let filterdata = Person.filter((a) => {
+
+            if (a.age <= number) {
+                console.log(a.name);
+            }
+
+        })
+        console.log(filterdata)
+
+
+        //         Question:
+        // You are given an array of 20 product objects. Each product has the following properties:
+        // id: Unique product ID (number)
+         // name: Name of the product (string)
+         // category: Category of the product — either "Silver", "Gold", or "Diamond" (string)
+         // price: Price of the product (number)
+
+
+
+
+        // Your task is to:
+
+        // Create an array of 20 such products with a mix of the three categories.
+        // Use the filter() method to extract:
+        // All Silver category products
+        // All Gold category products
+        // All Diamond category products
+
+
+
+
+    </script>
+</body>
+
+</html>
