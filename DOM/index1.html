@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <h2></h2>
+
+    <h3>This is H3</h3>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p id="para">This is Original</p>
+
+    <script>
+        let heading = document.getElementById("demo");
+        //innerHtml (add tag with data)
+        heading.innerHTML = "<p>This is para </p>";
+
+        //innerText (only add the  data)
+        let heading2 = document.querySelector("h2");
+        heading2.innerText = "This is h2";
+
+        //innerText (get data only)
+        let h3 = document.querySelector("h3");
+        let data = h3.innerText;
+        console.log(data)
+
+        //innerHtml (get tag with data)
+        let div = document.querySelector("div");
+        let divEl = div.innerHTML;
+        console.log(divEl);
+
+        //textContent  (Replace)
+        let para=document.getElementById("para");
+            para.textContent="This is Repalced Content"
+
+
+    </script>
+</body>
+
+</html>

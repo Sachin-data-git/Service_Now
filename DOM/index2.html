@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+       <div>
+        
+       </div>
+
+
+       <section>
+        <p>This is Original</p>
+       </section>
+
+       <section id="demo">
+        <h5>This is H5</h5>
+       </section>
+
+       <button onclick="Delete()">Delete</button>
+
+       <button onclick="Close()">Close Wiondow</button>
+
+
+       <script>
+
+        //CREATE and Append
+           
+           //How To create html Tags /Elements using js
+        //    let h1=document.createElement(prompt("Enter Tag"));
+        //    console.log(h1); //<h1></h1>
+
+        //    //How To create content using js
+        //    let content=document.createTextNode(prompt("Enter Data"));
+        //    console.log(content);
+
+        //    //how to append that content into element
+        //   h1.appendChild(content);
+        //    console.log(h1);
+
+           
+        //    let parent=document.querySelector("div");
+        //    //h1=child   parent=parent
+        //    parent.appendChild(h1);
+
+
+        //Replace
+        // let h2=document.createElement("h2");
+        // let content=document.createTextNode("This is Replaced Part");
+        // h2.appendChild(content);
+        
+        // let parent=document.querySelector("section");
+        // let child=document.querySelector("p");
+        // parent.replaceChild(h2,child)
+
+
+        //Remove
+        function Delete(){
+            let parent=document.getElementById("demo");
+        parent.remove();
+        }
+
+        // let child=document.querySelector("h5");
+        // parent.removeChild(child);
+
+
+        function Close(){
+            window.close();
+        }
+
+
+
+
+       </script>
+</body>
+</html>
