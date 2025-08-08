@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Manipulation</title>
+    <style>
+        .demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="demo">This is New Heading</h1>
+    
+
+    <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="" height="300" width="300">
+
+    <button onclick="Prev()">Prev</button>
+    <button onclick="Next()">Next</button>
+
+
+
+    <a href="https://www.wikipedia.org/">Click</a>
+
+    <p class="demo">Lorem ipsum dolor sit amet.</p>
+    <script>
+        //setAttribute()  set attributes values
+        function Next(){
+            let image=document.querySelector("img");
+            image.setAttribute("src","https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg")
+
+        }
+        function Prev(){
+            let image=document.querySelector("img");
+            image.setAttribute("src","https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg")
+
+        }
+
+
+        //getAttribute access the values attribute
+
+        let valueofhref=document.querySelector("a").getAttribute("href");
+        console.log(valueofhref);
+
+        
+        //removeAttribute  it is used to remove the attributes of elements
+        let para=document.querySelector("p");
+        para.removeAttribute("class");
+
+
+
+        let heading=document.getElementById("demo");
+        // heading.style.color="red"
+        // heading.style.setProperty("color","red");
+        heading.classList.add("demo");
+
+
+
+
+        //Dom Accessing Method to acees the html elment
+        // getElementById()
+        // getElementsByClassName()
+        // getElementsByTagName()
+        // querySelector()
+        // querySelectorAll()
+
+        //CRUD
+        // createElement()
+        // createTextNode()
+        // appendChild()
+        // replaceChild()
+        // remove()
+        // removeChild()
+        // insertBefore()
+
+        //styling
+        // 1)element.style.propertyName="value"
+        //2)element.style.setProperty("propertyName","value")
+        //3
+        //element.classList.add(className);
+        //element.classList.remove(className);
+        //element.classList.replace(oldClass,newClass);
+        //element.classList.toggle(className);
+
+
+
+
+    </script>
+</body>
+</html>

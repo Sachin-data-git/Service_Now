@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+            background-color: yellow;
+        }
+
+        .blue {
+            color: rgb(5, 61, 213);
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam adipisci eius esse repellendus
+        aut dolorum nisi enim? Quo omnis cupiditate illo et consequuntur culpa debitis sint earum placeat quam.</p>
+    <button onclick="Add()">Add</button>
+    <button onclick="Remove()">Remove</button>
+
+    <button onclick="toggleClass()">Toggle</button>
+
+    <button onclick="Replace()">Replace</button>
+    <script>
+
+        function Add() {
+            let para = document.getElementById("para");
+            para.classList.add("red");
+            // para.style.color="red"
+            // para.style.background="yellow"
+
+        }
+        function Remove() {
+            let para = document.getElementById("para");
+            para.classList.remove("red");
+
+        }
+
+        function toggleClass() {
+            let para = document.getElementById("para");
+            para.classList.toggle("red");
+        }
+
+
+        function Replace() {
+            let para = document.getElementById("para");
+            para.classList.replace("red", "blue");
+        }
+
+
+
+        //        Task Questions  using classList.add(),classList.remove(),classList.toggle(),classList.replace()
+        // Add Class
+        // Create a button that, when clicked, adds a CSS class highlight to a <p> tag to change its background color to yellow.
+
+        // Remove Class
+        // Create a button that, when clicked, removes the highlight class from a <p> tag to restore its default style.
+
+        // Toggle Class
+        // Create a button that, when clicked, toggles the class active on a <div> element to show/hide a border.
+
+        // Replace Class
+        // Create a button that, when clicked, replaces the class old-style with new-style on a heading element.
+
+        // Multiple Classes Add
+        // Create a button that, when clicked, adds two classes (bg-red and text-white) to a <div> element.
+
+        // Multiple Classes Remove
+        // Create a button that, when clicked, removes two classes (bg-red and text-white) from a <div> element.
+
+        // Toggle Multiple Classes
+        // Create a button that toggles two classes (large-text and underline) on a <p> element when clicked.
+
+        // Add Class to Multiple Elements
+        // Create a button that, when clicked, adds the class highlight to all <li> items in a list.
+
+        // Remove Class from Multiple Elements
+        // Create a button that, when clicked, removes the class highlight from all <li> items in a list.
+
+        // Replace Class in Multiple Elements
+        // Create a button that, when clicked, replaces the class old-style with new-style for all <h2> elements.
+    </script>
+</body>
+
+</html>
